@@ -19,6 +19,7 @@
     "react-scripts": "4.0.3",
     "recoil": "^0.4.0",
     "recoil-persist": "^3.0.0",
+    "swr": "^1.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
