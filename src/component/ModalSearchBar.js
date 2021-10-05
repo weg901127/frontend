@@ -1,16 +1,10 @@
-import React from "react";
-import { atom, useRecoilState } from "recoil";
+import React, { useState } from "react";
 import SearchIcon from "../img/search_icon_black.svg";
 import "../css/ModalSearchBar.css";
 
-export const useModalSearchInput = atom({
-  key: "useModalSearchInput",
-  default: "",
-});
-
 // eslint-disable-next-line react/prop-types
 const ModalSearchBar = ({ placeHolder, width }) => {
-  const [input, setInput] = useRecoilState(useModalSearchInput);
+  const [input, setInput] = useState("");
 
   const onChange = event => {
     const {
